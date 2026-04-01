@@ -1,0 +1,301 @@
+@media screen and (max-width: 1201px) {
+
+}
+@media screen and (max-width: 768px) {
+  .header{
+    &-logo{
+      margin-right: auto;
+      a{
+        .text-icon{
+          display: none;
+        }
+      }
+    }
+    &-portal{
+      height: 24rem;
+    }
+    &-action,
+    &-link,
+    {
+     display: none;
+    }
+    &-bottom{
+      display: none !important;
+      visibility: hidden;
+    }
+    &-nav{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      padding: 0 16rem;
+      ul{
+        flex-direction: column;
+        align-items: flex-start;
+        li{
+          margin-bottom: 40rem;
+        }
+        li.has-sub{
+          ul{
+            position: relative;
+            display: none;
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+            background-color: transparent;
+            padding: 0;
+            margin-top: 24rem;
+            li{
+              margin-bottom: 24rem;
+              a{
+                color: $white;
+                font-size: 18rem;
+                &:after{
+                  display: none;
+                }
+              }
+            }
+          }
+          &.active{
+            ul{
+              display: block;
+            }
+          }
+        }
+        a{
+          font: $h5m;
+        }
+      }
+    }
+    &-action{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 16rem;
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      transition: all ease 300ms;
+      text-align: center;
+      .btn-primary{
+        width: 100%;
+        text-align: center;
+        max-width: 480rem;
+        text-align: center;
+      }
+    }
+    &-btn{
+      display: block;
+    }
+    &.active{
+      .header-nav{
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+      }
+      .header-action{
+        opacity: 1;
+        visibility: visible;
+        top: 80vh;
+        display: block;
+      }
+      .header-link{
+        display: block;
+        position: absolute;
+        top: 85vh;
+        left: 16rem;
+      }
+      .header-overlay{
+        opacity: 1;
+        visibility: visible;
+      }
+      .header-bottom{
+        display: none;
+        opacity: 1;
+        visibility: visible;
+
+      }
+    }
+    &.scroll-nav {
+      .header-logo{
+      }
+    }
+  }
+  .modal-input._half{
+    max-width: 100%;
+  }
+  input, select, textarea{
+    padding: 12rem;
+  }
+  body{
+    font:$bodyM;
+  }
+  section{
+    padding: 40rem 0;
+  }
+  .title-section{
+    font: $h2m;
+    margin-bottom: 16rem;
+    span{
+      &:after{
+        bottom: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+  p{
+    font: $bodyM;
+  }
+  .popup{
+    &-wrap{
+      padding: 24rem;
+    }
+    &-close{
+      right: 5rem;
+      top: 5rem;
+    }
+    &-subtitle{
+      font: $bodyM;
+      margin-bottom: 16rem;
+    }
+  }
+  .h1, h1{
+    font: $h1m;
+  }
+  .h2, h2{
+    font: $h2m;
+  }
+  .h3, h3{
+    font: $h3m;
+  }
+  .h4, h4{
+    font: $h4m;
+  }
+  .h5, h5{
+    font: $h5m;
+  }
+  .text-section{
+    h2{
+      margin-bottom: 24rem;
+    }
+  }
+  .hero{
+    &:after, &:before{
+      display: none;
+    }
+    &-title{
+      margin: auto 0 25rem;
+      font: $h1m;
+    }
+    &-subtitle{
+      font-size: 60rem;
+      margin-bottom: 25rem;
+      span{
+        font-size: 34rem;
+      }
+    }
+    &-text{
+      font: $bodyM;
+    }
+    &-wrap{
+      flex-direction: column-reverse;
+      margin-bottom: 60rem;
+    }
+    &-action{
+      flex-direction: column;
+      position: relative;
+      &:before, &:after{
+        position: absolute;
+        content: '';
+        left: -16rem;
+        right: 0;
+        width: 100vw;
+        height: 1rem;
+        background: rgba($white, .1);
+      }
+      &:after{
+        bottom: 57rem;
+      }
+      &:before{
+        top: 0;
+      }
+      &__media{
+        position: relative;
+        bottom: 0;
+        margin-top: 30rem;
+      }
+      a{
+        padding: 27rem 40rem;
+        border-bottom: 1rem solid rgba($white,.1);
+        &:nth-of-type(2){
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  .top-section{
+    flex-direction: column;
+    margin-bottom: 25rem;
+  }
+  .modal-input{
+    input, textarea{
+      
+    }
+  }
+  .tools{
+    &-wrap{
+      .slide {
+        max-width: 100%;
+      }
+
+    }
+    &-item{
+      &__desc{
+        padding: 100% 25rem 25rem 25rem;
+      }
+      &__title{
+        font: $h3m;
+      }
+    }
+    .slick-dots{
+      width: 100%;
+      margin-top: 25rem;
+    }
+    .section-link{
+      margin-top: 30rem;
+    }
+  }
+  .btn-primary {
+    padding: 0 0;
+    width: 100%;
+    max-width: 343rem;
+    span{
+      padding: 17rem 32rem;
+      width: calc(100% - 56rem);
+    }
+    .icon{
+      width: 56rem;
+      height: 56rem;
+    }
+  }
+  .cta{
+    .container{
+      flex-direction: column;
+    }
+    &-info,
+    &-form{
+      width: 100%;
+      padding: 25rem;
+    }
+    .title-section{
+      margin-bottom: 60rem;
+    }
+  }
+  .subtitle-section{
+    font-size: 17rem;
+    line-height: 25rem;
+    margin-bottom: 10rem;
+  }
+}

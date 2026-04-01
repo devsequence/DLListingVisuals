@@ -1,0 +1,251 @@
+.top{
+  position: relative;
+  min-height: 100vh;
+  &-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg,rgba(248, 247, 242, 0) 0%, rgba(248, 247, 242, 1) 62%, rgba(248, 247, 242, 1) 100%);
+
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+  &-title{
+    font: $h1L;
+    font-weight: 200;
+    margin:0 auto 32rem;
+    text-align: center;
+    max-width: 1057rem;
+    b{
+      font-weight: 400;
+    }
+  }
+  &-text{
+    text-align: center;
+    max-width: 900rem;
+    margin:0 auto 50rem;
+    font: $h5;
+  }
+}
+.about-main{
+  position: relative;
+  &:before,
+  &:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background-color: #DEDEDD;
+  }
+  &:before{
+    top: 78rem;
+  }
+  &:after{
+    bottom: 78rem;
+  }
+  &__wrap{
+    display: flex;
+  }
+  &__image{
+    width: 50%;
+    padding-right: 24rem;
+    border-right: 1rem solid #DEDEDD;
+    img{
+      max-width: 698rem;
+      width: 100%;
+      border-radius: 6rem;
+    }
+  }
+  &__desc{
+    padding: 24rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title{
+    font: $h3;
+    margin-bottom: 24rem;
+  }
+  &__text{
+    color:  #585858;
+    max-width: 441rem;
+  }
+}
+.video-section{
+  padding: 0;
+  &__media{
+
+    img, video{
+      width: 100%;
+      height: 100%;
+      border-radius: 8rem;
+      object-fit: cover;
+    }
+  }
+  &__controls{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    button{
+      width: 130rem;
+      height: 130rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 6rem;
+      justify-content: center;
+      background-color: transparent;
+      color: $white;
+      border: 1rem solid $white;
+      border-radius: 50%;
+      img, svg{
+        width: 14rem;
+      }
+    }
+  }
+}
+.faq{
+  .top-section{
+    text-align: center;
+  }
+  &-wrap{
+    counter-reset: faq-counter;
+  }
+  &-item{
+    counter-increment: faq-counter;
+
+    border-bottom: 1rem solid #DEDEDD;
+    padding: 14rem 170rem 34rem 30rem;
+    position: relative;
+    &:before{
+      position: absolute;
+      left: 30rem;
+      top: 14rem;
+      font: $bodyS;
+      color: $primary;
+      content: "0" counter(faq-counter);
+    }
+    &:after{
+      position: absolute;
+      right: 10rem;
+      top: 35rem;
+      font: 400 24rem/24rem $DMSans;
+      color: $default;
+      content: "+";
+    }
+    &:first-child{
+      border-top: 1rem solid #DEDEDD;
+    }
+    &__title{
+      font: $h4;
+      max-width: 700rem;
+      margin-left: auto;
+      cursor: pointer;
+    }
+    &__text{
+      width: 100%;
+      max-width: 700rem;
+      margin-left: auto;
+      font: $bodyM;
+      margin-top: 0rem;
+      opacity: 0;
+      visibility: hidden;
+      right: 170rem;
+      position: absolute;
+      transition: all ease 300ms;
+      z-index: -1;
+    }
+    &.active{
+      &:after{
+        content: "-";
+      }
+      .faq-item__text{
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        right: 0;
+        margin-top: 20rem;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    }
+  }
+}
+.cta{
+  background-color: $default;
+  color: $white;
+  padding: 140rem 0;
+  position: relative;
+  &-media{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    max-width: 1920rem;
+    margin: 0 auto;
+    &-item{
+      position: absolute;
+      &:nth-of-type(1){
+        left: 42rem;
+        top: 112rem;
+        width: 208rem;
+        height: 245rem;
+      }
+      &:nth-of-type(2){
+        left: 76rem;
+        top: 308rem;
+        width: 268rem;
+        height: 201rem;
+      }
+      &:nth-of-type(3){
+        right: 56rem;
+        top: 95rem;
+        width: 240rem;
+        height: 258rem;
+      }
+      &:nth-of-type(4){
+        right: 0;
+        top: 302rem;
+        width: 276rem;
+        height: 207rem;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4rem;
+      }
+    }
+  }
+  &-wrap{
+    max-width: 687rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .text-section{
+    margin-bottom: 32rem;
+  }
+}

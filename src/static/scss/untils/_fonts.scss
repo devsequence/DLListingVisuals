@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'DM Sans Italic';
+    src: url('../fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/TimesNewRomanMTStd-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sauce Sans';
+    src: url('../fonts/open-sauce-sans-normal.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce Sans';
+    src: url('../fonts/open-sauce-sans-300.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+$DMSansItalic: "DM Sans Italic", sans-serif ;
+$DMSans: "DM Sans", sans-serif ;
+$TimesNewRoman: "Times New Roman", sans-serif ;
+$OpenSauceSans: "Open Sauce Sans", sans-serif ;
+
+
+$h1 : 400 96rem/100% $DMSans;
+$h1L : 300 96rem/100% $DMSans;
+$h2 : 400 70rem/97% $DMSans;
+$h2L : 200 70rem/97% $DMSans;
+$h3 : 400 50rem/110% $DMSans;
+$h4 : 400 30rem/110% $DMSans;
+$h5 : 300 26rem/120% $DMSans;
+
+$h1m : 400 60rem/110% $DMSans;
+$h2m : 400 35rem/42rem $DMSans;
+$h3m : 400 20rem/29rem $DMSans;
+$h4m : 400 18rem/140% $DMSans;
+$h5m : 400 18rem/126% $DMSans;
+
+$button : 400 20rem/110% $TimesNewRoman;
+$nav : 400 20rem/110% $OpenSauceSans;
+$body : 300 20rem/120% $DMSans;
+$bodyL : 300 20rem/120% $DMSans;
+$bodyM : 300 16rem/130% $DMSans;
+$bodyS : 300 14rem/120% $DMSans;
+

@@ -1,0 +1,476 @@
+.main-content{
+  margin-top: 100rem;
+}
+.hero{
+  min-height: calc(100vh - 100rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50rem 0;
+  &-media{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    &__item{
+      width: 100%;
+      height: 100%;
+      &:first-child{
+        position: relative;
+        &:before{
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          width: 50%;
+          height: 100%;
+          background: linear-gradient(
+                          -90deg,
+                          rgba(17, 12, 30, 0) 0%,
+                          rgba(17, 12, 30, 1) 100%
+          );
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-wrap{
+    max-width: 691rem;
+    color: $white;
+  }
+  &-title{
+    font: $h1L;
+    font-weight: 200;
+    margin-bottom: 32rem;
+    max-width: 590rem;
+    b{
+      font-weight: 400;
+    }
+  }
+  &-text{
+    max-width: 609rem;
+    margin-bottom: 50rem;
+    font: $h5;
+  }
+}
+.about{
+  background-color: $default;
+  color: $white;
+  &-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+  }
+  &-desc{
+    max-width: 623rem;
+    .text-section{
+      margin-bottom: 30rem;
+    }
+  }
+  &-number{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rem;
+    &__item{
+      font: $h5;
+    }
+    span{
+      display: block;
+      font: $h3;
+    }
+  }
+  &-media{
+    width: 100%;
+    max-width: 698rem;
+    img{
+      width: 100%;
+    }
+  }
+}
+.brands{
+  .title-section{
+    text-align: center  ;
+    max-width: 1174rem;
+    margin: 0 auto 80rem;
+  }
+  &-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24rem 190rem;
+  }
+  &-item{
+    width: 100%;
+    max-width: 200rem;
+    min-height: 130rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 100%;
+      max-width: 200rem;
+    }
+  }
+}
+.advantages{
+  .title-section{
+    text-align: center;
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30rem 0;
+    margin: 0 auto;
+    border-top: 1rem solid #DEDEDD;
+    border-bottom: 1rem solid #DEDEDD;
+  }
+  &-item{
+    min-height: 550rem;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-right: 1rem solid #DEDEDD;
+    &:nth-of-type(2n){
+      border-right: 0;
+    }
+    &__media{
+      margin-bottom: 12rem;
+      img{
+        width: 60rem;
+        height: 60rem;
+      }
+    }
+    &__title{
+      font: $h3;
+      margin-bottom: 12rem;
+      max-width: 336rem;
+
+    }
+    &__text{
+      font: $bodyM;
+      color: #585858;
+      margin-bottom: 42rem;
+      max-width: 336rem;
+
+    }
+  }
+}
+.projects{
+  background-color: $default;
+  color: $white;
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24rem;
+  }
+  &-item{
+    width: 100%;
+    border-radius: 4rem;
+    max-width: calc(25% - 18rem);
+    position: relative;
+    overflow: hidden;
+    &__media{
+      overflow: hidden;
+      width: 336rem;
+      height: 370rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: all ease 300ms;
+      }
+    }
+    &__desc{
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: -10rem;
+      transition: all ease 300ms;
+      .btn-secondary{
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &__link{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+    &:hover{
+      .projects-item{
+        &__desc{
+          opacity: 1;
+          visibility: visible;
+          z-index: 2;
+          bottom: 0;
+        }
+        &__media{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+.reviews{
+  position: relative;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100vw;
+    left: -1690rem;
+    top: 0;
+    background-color: #F8F7F2;
+    height: 100%;
+    z-index: 2;
+  }
+  .title-section{
+    text-align: center;
+  }
+  .slick-list{
+    overflow: visible;
+    margin: 0 -12rem;
+  }
+  .slide{
+    padding:0 12rem;
+  }
+  &-slider{
+    margin-bottom: 24rem;
+  }
+  &-item{
+    padding: 32rem;
+    border: 1rem solid $primary;
+    border-radius: 6rem;
+    min-height: 410rem;
+    display: flex;
+    flex-direction: column;
+
+    &__rating{
+      margin-bottom: 32rem;
+      ul{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+      li{
+        width: 16rem;
+        height: 16rem;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    &__text{
+      font: $bodyM;
+    }
+    &__author{
+      margin-top:auto;
+      display: flex;
+      align-items: center;
+      gap: 14rem;
+      &-media{
+        width: 77rem;
+        height: 77rem;
+        img{
+          width: 100%;
+          border-radius: 4rem;
+        }
+      }
+      &-name{
+        font: $bodyS;
+        span{
+          display: block;
+          margin-bottom: 8rem;
+          font: $bodyL;
+        }
+      }
+    }
+  }
+  &-progress {
+    width: 100%;
+    height: 2rem;
+    background: #d8d2ca;
+    position: relative;
+    overflow: hidden;
+    span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: #8d7b63;
+      transition: width 0.4s ease;
+    }
+  }
+  &-nav{
+    display: flex;
+    gap: 40rem;
+    align-items: center;
+    margin-bottom: 24rem;
+  }
+  .slick-button{
+    display: flex;
+    gap: 14rem;
+    align-items: center;
+    button{
+      background-color: transparent;
+      width: 46rem;
+      height: 46rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 16rem;
+        height: 16rem;
+      }
+    }
+  }
+  .text-section{
+
+    text-align: right;
+    font: $bodyM;
+  }
+}
+.choose{
+  background-color: $default;
+  color: $white;
+  .title-section{
+    text-align: center;
+
+  }
+  &-wrap{
+    display: flex;
+    gap: 42rem;
+  }
+  &-desc{
+    max-width: 537rem;
+  }
+  &-item{
+    padding: 14rem 30rem 45rem;
+    border-bottom: 1rem solid rgba(138,136 ,136, .2);
+    &:first-child{
+      border-top: 1rem solid rgba(138,136 ,136, .2);
+    }
+    &__title{
+      display: flex;
+      align-items: flex-start;
+      font: $h4;
+      gap: 14rem;
+      margin-bottom: 12rem;
+      span{
+        color: $primary;
+        font: $bodyS;
+      }
+    }
+    &__text{
+      font: $bodyM;
+      max-width: 403rem;
+    }
+  }
+  &-media{
+    width: 100%;
+    max-width: 843rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap:24rem;
+      grid-row-gap: 24rem;
+      &__item{
+        &:nth-of-type(1){grid-area: 1 / 1 / 2 / 3;}
+        &:nth-of-type(2){grid-area: 2 / 1 / 3 / 3;}
+        &:nth-of-type(3){grid-area: 1 / 3 / 3 / 6;}
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 6rem;
+        }
+      }
+
+  }
+}
+.step{
+  .title-section{
+    max-width: 1070rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-wrap{
+    margin: 90rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 18rem;
+      z-index: -1;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1000rem;
+      border-top: 1rem dashed $primary;
+    }
+  }
+  &-item{
+    text-align: center;
+    &__number{
+      background-color: $white;
+      font: $h4;
+      width: 128rem;
+      margin:  0 auto 12rem;
+      color: $primary;
+    }
+    &__title{
+      margin-bottom: 12rem;
+      font: $h4;
+    }
+    &__text{
+      font: $bodyM;
+      color: #585858;
+      max-width: 364rem;
+      margin: 0 auto;
+    }
+  }
+  .link-section{
+    text-align: center;
+  }
+}
+.bottom-media{
+  width: 100%;
+  padding: 0;
+  a{
+    width: 100%;
+    display: block;
+  }
+  img{
+    width: 100%;
+  }
+}

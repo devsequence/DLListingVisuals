@@ -1,0 +1,90 @@
+.footer{
+  background-color: #DEDEDD;
+  a{
+    color: $default;
+    &:hover{
+      color: $primary;
+    }
+  }
+  &-top{
+    padding: 100rem 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    &__title{
+      font: $h3;
+    }
+  }
+  &-title{
+    font: $h5;
+    color: rgba($default,.4);
+    margin-bottom: 32rem;
+  }
+  &-item{
+
+  }
+  &-list{
+    ul{
+      li{
+        margin-bottom: 14rem;
+      }
+      a{
+        font:$bodyL;
+      }
+    }
+  }
+  &-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 613rem;
+    gap: 20rem;
+  }
+  &-bottom{
+    padding: 0 0 50rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 20rem;
+    justify-content: space-between;
+  }
+  &-contact{
+    display: flex;
+    max-width: 613rem;
+    gap: 32rem;
+    ul{
+      li{
+        font:$bodyM;
+        width: 100%;
+        max-width: 205rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14rem;
+      }
+      a{
+        font:$bodyM;
+      }
+    }
+  }
+  &-social{
+    display: flex;
+    width: 100%;
+    max-width: 613rem;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+      display: flex;
+      align-content: center;
+      gap: 10rem;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4rem ;
+      border: 1rem solid rgba($default,.2);
+      gap: 6rem;
+      padding: 10rem;
+      width: 100%;
+      min-width: 140rem;
+    }
+  }
+}

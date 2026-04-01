@@ -1,0 +1,38 @@
+// genearl
+$white: #F8F7F2;
+$whiteB: rgba($white, .72);
+$black: #000;
+
+// main
+$default: #141414;
+$stroke: #E5DDCD;
+$strokeLight: rgba($white, .15);
+$bg: #F8F7F2;
+$bg-light: #F9F2E7;
+$light: #DEDEDD;
+$primary: #9A845C;
+$primary-hover: #E8A41A;
+$secondary: #D1C19A;
+
+$gradient: linear-gradient(154deg, rgba(252, 184, 46, 0.70) 26.43%, rgba(252, 184, 46, 0.00) 98.67%);
+$gradientSecondary: linear-gradient(90deg, rgba(246, 239, 225, 0.00) 0%, #F6EFE1 50%, rgba(246, 239, 225, 0.00) 100%);
+$gradientHover: linear-gradient(-10deg, rgba(252, 184, 46, 0.70) 26.43%, rgba(252, 184, 46, 0.00) 98.67%);
+$boxShadow: 0 0 16px 0 rgba(121, 69, 225, 0.50), 0 0 3px 0 #FFF inset;
+
+
+$red: #C12716;
+
+// info
+
+$danger: #FE0000;
+$success: #1FA956;
+$info: #26badf;
+$warning: #fbf8db;
+
+// mixins
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $fromColor;
+  background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+
