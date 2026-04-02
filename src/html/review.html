@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" data-theme="light">
+
+<head>
+	@@include('./includes/_head.html')
+</head>
+
+<body>
+	<!--page-wrapper-->
+	<div class="page-wrapper">
+		@@include('./includes/_header.html')
+		<!--page-content-->
+		<div class="main-content">
+			<section class="review-page">
+				<div class="container">
+					<div class="review-page__wrap">
+						<div class="review-page__form">
+							<div class="review-page__title">
+								Share your experience with David Lekh
+							</div>
+							<div class="review-page__text">We’d love to hear from you!</div>
+							<form>
+								<div class="form-rating">
+									<p class="form-rating__label">How would you rate your experience?</p>
+									<div class="form-rating__stars">
+										<input type="radio" name="rating" id="rating5" value="5">
+										<label for="rating5" aria-label="5 stars">
+											<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M7.81064 0.706665L9.60664 6.23333H15.42L10.7173 9.65067L12.5133 15.1773L7.81064 11.7613L3.1093 15.1773L4.9053 9.65067L0.202637 6.23333H6.01597L7.81064 0.706665Z"/>
+											</svg>
+										</label>
+
+										<input type="radio" name="rating" id="rating4" value="4">
+										<label for="rating4" aria-label="4 stars">
+											<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M7.81064 0.706665L9.60664 6.23333H15.42L10.7173 9.65067L12.5133 15.1773L7.81064 11.7613L3.1093 15.1773L4.9053 9.65067L0.202637 6.23333H6.01597L7.81064 0.706665Z"/>
+											</svg>
+										</label>
+
+										<input type="radio" name="rating" id="rating3" value="3">
+										<label for="rating3" aria-label="3 stars">
+											<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M7.81064 0.706665L9.60664 6.23333H15.42L10.7173 9.65067L12.5133 15.1773L7.81064 11.7613L3.1093 15.1773L4.9053 9.65067L0.202637 6.23333H6.01597L7.81064 0.706665Z"/>
+											</svg>
+										</label>
+
+										<input type="radio" name="rating" id="rating2" value="2">
+										<label for="rating2" aria-label="2 stars">
+											<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M7.81064 0.706665L9.60664 6.23333H15.42L10.7173 9.65067L12.5133 15.1773L7.81064 11.7613L3.1093 15.1773L4.9053 9.65067L0.202637 6.23333H6.01597L7.81064 0.706665Z"/>
+											</svg>
+										</label>
+
+										<input type="radio" name="rating" id="rating1" value="1">
+										<label for="rating1" aria-label="1 star">
+											<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M7.81064 0.706665L9.60664 6.23333H15.42L10.7173 9.65067L12.5133 15.1773L7.81064 11.7613L3.1093 15.1773L4.9053 9.65067L0.202637 6.23333H6.01597L7.81064 0.706665Z"/>
+											</svg>
+										</label>
+									</div>
+								</div>
+								<div class="modal-input">
+									<input type="text" name="Name" placeholder="Name*" required>
+								</div>
+								<div class="modal-input">
+									<input type="text" name="Company name" placeholder="Company name">
+								</div>
+								<div class="modal-input">
+									<input type="email" name="Email" placeholder="Email*">
+								</div>
+								<div class="modal-input">
+									<input type="text" name="from" placeholder="Where are you from?">
+								</div>
+								<div class="modal-input _full">
+									<textarea name="message" placeholder="Your review"></textarea>
+								</div>
+								<button type="button" class="btn-primary"><span>Submit</span><img class="svg-convert" src="../static/images/arrow-white.svg" alt="arrow-white"></button>
+							</form>
+						</div>
+						<div class="review-page__total">
+							<div class="review-page__inner">
+								<div class="review-page__grade">
+									<span>5.0</span>
+									<ul>
+										<li><img src="../static/images/ic-star.svg" alt="star"></li>
+										<li><img src="../static/images/ic-star.svg" alt="star"></li>
+										<li><img src="../static/images/ic-star.svg" alt="star"></li>
+										<li><img src="../static/images/ic-star.svg" alt="star"></li>
+										<li><img src="../static/images/ic-star.svg" alt="star"></li>
+									</ul>
+								</div>
+								<div class="review-page__stars">
+									5.0 out of 5 stars (based on 5 reviews)
+								</div>
+								<div class="review-page__list">
+									<ul>
+										<li>
+											<span>Excellent</span>
+											<span class="progress"><span class="progress-bg" style="width: 100%"></span></span>
+											<span>100%</span>
+										</li>
+										<li>
+											<span>Very good</span>
+											<span class="progress"><span class="progress-bg"></span></span>
+											<span>0%</span>
+										</li>
+										<li>
+											<span>Average</span>
+											<span class="progress"><span class="progress-bg" ></span></span>
+											<span>0%</span>
+										</li>
+										<li>
+											<span>Poor</span>
+											<span class="progress"><span class="progress-bg" ></span></span>
+											<span>0%</span>
+										</li>
+										<li>
+											<span>Terrible</span>
+											<span class="progress"><span class="progress-bg"></span></span>
+											<span>0%</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--page-content-->
+		@@include('./includes/_footer.html')
+	</div>
+	<!--end-page-wrapper-->
+	@@include('./includes/_scripts.html')
+<!--	<div class="cookies">-->
+<!--		<div class="cookies-close"></div>-->
+<!--		<div class="cookies-title">Accept the use of cookies.</div>-->
+<!--		<div class="cookies-text">We use cookies to improve your browsing experience, serve personalized content, and analyze our traffic. By clicking Accept all Cookies, you agree to the storing of cookies on your device. You can customize your settings by clicking Manage Preferences. For more details, see our-->
+<!--			<a href="#"> Cookie Policy.</a>-->
+<!--		</div>-->
+<!--		<div class="cookies-link">-->
+<!--			<a href="#" class="btn-primary">Accept all Cookies</a>-->
+<!--			<a href="#" class="btn-secondary">Manage Preferences</a>-->
+<!--		</div>-->
+<!--	</div>-->
+<span class="line-left"></span>
+<span class="line-right"></span>
+</body>
+
+</html>

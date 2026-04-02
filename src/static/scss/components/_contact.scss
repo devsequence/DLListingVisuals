@@ -1,0 +1,30 @@
+.contact-top{
+  background-color: $default;
+  padding: 60rem 0;
+  color: $white;
+  .text-section{
+    text-align: center;
+  }
+}
+.contact{
+  &-form{
+    width: 100%;
+    max-width: 1000rem;
+    margin: 0 auto;
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30rem 16rem;
+      .modal-input{
+        width: calc(50% - 8rem);
+        &._full{
+          width: 100%;
+        }
+      }
+      .form-rating{
+        width: 100%;
+      }
+    }
+  }
+}
