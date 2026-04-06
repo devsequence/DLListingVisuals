@@ -34,7 +34,8 @@
                    <li class="has-sub">
                        <a href="#">Services</a>
                        <ul>
-                           <li><a href="#"></a></li>
+                           <li><a href="#">Real Estate Listing Visuals</a></li>
+                           <li><a href="#">Branding & Marketing Media</a></li>
                        </ul>
                    </li>
                    <li><a href="#">Pricing</a></li>
@@ -49,19 +50,21 @@
            </div>
            <div class="header-btn"><span></span></div>
        </div>
+       <div class="header-overlay"></div>
    </header>
 		<!--page-content-->
 		<div class="main-content">
 			<section class="review-page">
+				<form>
 				<div class="container">
 					<div class="review-page__wrap">
 						<div class="review-page__form">
-							<div class="review-page__title">
+							<div class="review-page__top">
+							<div class="review-page__title" data-aos="fade-up">
 								Share your experience with David Lekh
 							</div>
-							<div class="review-page__text">We’d love to hear from you!</div>
-							<form>
-								<div class="form-rating">
+							<div class="review-page__text" data-aos="fade-up">We’d love to hear from you!</div>
+							<div class="form-rating"  data-aos-delay="400" data-aos="fade-up">
 									<p class="form-rating__label">How would you rate your experience?</p>
 									<div class="form-rating__stars">
 										<input type="radio" name="rating" id="rating5" value="5">
@@ -100,72 +103,75 @@
 										</label>
 									</div>
 								</div>
-								<div class="modal-input">
-									<input type="text" name="Name" placeholder="Name*" required>
+							</div>
+							<div class="review-page__total" data-aos="fade-up">
+									<div class="review-page__inner">
+										<div class="review-page__grade">
+											<span>5.0</span>
+											<ul>
+												<li><img src="../static/images/ic-star.svg" alt="star"></li>
+												<li><img src="../static/images/ic-star.svg" alt="star"></li>
+												<li><img src="../static/images/ic-star.svg" alt="star"></li>
+												<li><img src="../static/images/ic-star.svg" alt="star"></li>
+												<li><img src="../static/images/ic-star.svg" alt="star"></li>
+											</ul>
+										</div>
+										<div class="review-page__stars">
+											5.0 out of 5 stars (based on 5 reviews)
+										</div>
+										<div class="review-page__list">
+											<ul>
+												<li>
+													<span>Excellent</span>
+													<span class="progress"><span class="progress-bg" style="width: 100%"></span></span>
+													<span>100%</span>
+												</li>
+												<li>
+													<span>Very good</span>
+													<span class="progress"><span class="progress-bg"></span></span>
+													<span>0%</span>
+												</li>
+												<li>
+													<span>Average</span>
+													<span class="progress"><span class="progress-bg" ></span></span>
+													<span>0%</span>
+												</li>
+												<li>
+													<span>Poor</span>
+													<span class="progress"><span class="progress-bg" ></span></span>
+													<span>0%</span>
+												</li>
+												<li>
+													<span>Terrible</span>
+													<span class="progress"><span class="progress-bg"></span></span>
+													<span>0%</span>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								<div class="modal-input">
-									<input type="text" name="Company name" placeholder="Company name">
-								</div>
-								<div class="modal-input">
-									<input type="email" name="Email" placeholder="Email*">
-								</div>
-								<div class="modal-input">
-									<input type="text" name="from" placeholder="Where are you from?">
-								</div>
-								<div class="modal-input _full">
-									<textarea name="message" placeholder="Your review"></textarea>
-								</div>
-								<button type="button" class="btn-primary"><span>Submit</span><img class="svg-convert" src="../static/images/arrow-white.svg" alt="arrow-white"></button>
-							</form>
-						</div>
-						<div class="review-page__total">
-							<div class="review-page__inner">
-								<div class="review-page__grade">
-									<span>5.0</span>
-									<ul>
-										<li><img src="../static/images/ic-star.svg" alt="star"></li>
-										<li><img src="../static/images/ic-star.svg" alt="star"></li>
-										<li><img src="../static/images/ic-star.svg" alt="star"></li>
-										<li><img src="../static/images/ic-star.svg" alt="star"></li>
-										<li><img src="../static/images/ic-star.svg" alt="star"></li>
-									</ul>
-								</div>
-								<div class="review-page__stars">
-									5.0 out of 5 stars (based on 5 reviews)
-								</div>
-								<div class="review-page__list">
-									<ul>
-										<li>
-											<span>Excellent</span>
-											<span class="progress"><span class="progress-bg" style="width: 100%"></span></span>
-											<span>100%</span>
-										</li>
-										<li>
-											<span>Very good</span>
-											<span class="progress"><span class="progress-bg"></span></span>
-											<span>0%</span>
-										</li>
-										<li>
-											<span>Average</span>
-											<span class="progress"><span class="progress-bg" ></span></span>
-											<span>0%</span>
-										</li>
-										<li>
-											<span>Poor</span>
-											<span class="progress"><span class="progress-bg" ></span></span>
-											<span>0%</span>
-										</li>
-										<li>
-											<span>Terrible</span>
-											<span class="progress"><span class="progress-bg"></span></span>
-											<span>0%</span>
-										</li>
-									</ul>
-								</div>
+							<div class="review-page__form-page"  data-aos-delay="500" data-aos="fade-up">
+							<div class="modal-input">
+								<input type="text" name="Name" placeholder="Name*" required>
+							</div>
+							<div class="modal-input">
+								<input type="text" name="Company name" placeholder="Company name">
+							</div>
+							<div class="modal-input">
+								<input type="email" name="Email" placeholder="Email*">
+							</div>
+							<div class="modal-input">
+								<input type="text" name="from" placeholder="Where are you from?">
+							</div>
+							<div class="modal-input _full">
+								<textarea name="message" placeholder="Your review"></textarea>
+							</div>
+							<button type="button" class="btn-primary"><span>Submit</span><img class="svg-convert" src="../static/images/arrow-white.svg" alt="arrow-white"></button>
 							</div>
 						</div>
 					</div>
 				</div>
+				</form>
 			</section>
 		</div>
 		<!--page-content-->

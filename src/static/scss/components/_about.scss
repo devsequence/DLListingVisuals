@@ -95,20 +95,22 @@
 .video-section{
   padding: 0;
   &__media{
-
     img, video{
       width: 100%;
       height: 100%;
+      max-height: 700rem;
       border-radius: 8rem;
       object-fit: cover;
     }
   }
-  &__controls{
+
+}
+.video-section__controls{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    button{
+    button.play{
       width: 130rem;
       height: 130rem;
       display: flex;
@@ -122,9 +124,10 @@
       border-radius: 50%;
       img, svg{
         width: 14rem;
+        height: 14rem;
+        object-fit: contain;
       }
     }
-  }
 }
 .faq{
   .top-section{
@@ -135,7 +138,6 @@
   }
   &-item{
     counter-increment: faq-counter;
-
     border-bottom: 1rem solid #DEDEDD;
     padding: 14rem 170rem 34rem 30rem;
     position: relative;
@@ -171,10 +173,11 @@
       font: $bodyM;
       margin-top: 0rem;
       opacity: 0;
+      color: #585858;
       visibility: hidden;
       right: 170rem;
       position: absolute;
-      transition: all ease 300ms;
+      transition: opacity ease 300ms, position ease 300ms, margin-top ease 300ms;
       z-index: -1;
     }
     &.active{

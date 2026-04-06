@@ -97,8 +97,10 @@
   &-media{
     width: 100%;
     max-width: 698rem;
+    height: 806rem;
     img{
       width: 100%;
+      height: auto;
     }
   }
 }
@@ -184,10 +186,13 @@
     flex-wrap: wrap;
     gap: 24rem;
   }
+  .slide{
+    max-width: calc(25% - 18rem);
+  }
   &-item{
     width: 100%;
     border-radius: 4rem;
-    max-width: calc(25% - 18rem);
+
     position: relative;
     overflow: hidden;
     &__media{
@@ -241,6 +246,7 @@
   }
 }
 .reviews{
+  overflow: hidden;
   position: relative;
   &:before{
     position: absolute;
@@ -369,6 +375,7 @@
     gap: 42rem;
   }
   &-desc{
+    width: 100%;
     max-width: 537rem;
   }
   &-item{
@@ -395,7 +402,7 @@
   }
   &-media{
     width: 100%;
-    max-width: 843rem;
+    max-width: 913rem;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(2, 1fr);

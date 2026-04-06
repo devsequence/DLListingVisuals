@@ -6,8 +6,16 @@
     justify-content: space-between;
   }
   &__form{
-    width: 100%;
-    max-width: 676rem;
+    display: grid;
+    grid-template-columns: minmax(320rem, 1fr) 698rem;
+    grid-template-areas:
+        "top total"
+        "form total";
+    gap: 48rem 64rem;
+    align-items: start;
+    .review-page__top{  grid-area: top;}
+    .review-page__total{ grid-area: total;}
+    .review-page__form-page{grid-area: form;}
     form{
       display: flex;
       flex-wrap: wrap;
@@ -17,21 +25,33 @@
         &._full{
           width: 100%;
         }
-
       }
       .form-rating{
         width: 100%;
+      }
+    }
+    &-page{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16rem;
+      .modal-input{
+        margin-bottom: 30rem;
+        width: calc(50% - 8rem);
+        &._full{
+          width: 100%;
+        }
       }
     }
   }
   &__total{
     width: 100%;
     max-width: 698rem;
-    font-style: $bodyM;
+    font: $bodyM;
   }
   &__title{
     font: $h3;
     margin-bottom: 24rem;
+    max-width:685rem;
   }
   &__text{
     color: #585858;

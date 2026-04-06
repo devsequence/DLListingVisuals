@@ -13,6 +13,9 @@ body {
   //@media screen and (max-width: 1440px){
   //  font-size: calc(100vw / 1440);
   //}
+  @media screen and (max-width: 1512px){
+    font-size: calc(100vw / 1512);
+  }
    @media screen and (max-width: 1200px){
      font-size: calc(100vw / 1440);
    }
